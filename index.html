@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1945 스타일 슈팅 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div id="ui-layer">
+            <div id="scoreBoard">SCORE: 0</div>
+            <div id="bombBoard">BOMB (Z키): 3</div>
+            <div id="controlsHelp">이동: 방향키 | 공격: Space | 폭탄: Z | 일시정지: P / ESC</div>
+            
+            <div id="bossHpContainer">
+                <div id="bossHpBar"></div>
+            </div>
+
+            <div id="pauseScreen">
+                <h2>PAUSED</h2>
+                <p>P 또는 ESC 키를 눌러 게임 재개</p>
+            </div>
+
+            <div id="gameOverScreen">
+                <h2>GAME OVER</h2>
+                <p id="finalScore">최종 점수: 0</p>
+                <button onclick="resetGame()">다시 시작</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
